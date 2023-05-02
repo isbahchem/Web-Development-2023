@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            border: 3px solid black;
+            background-color: blanchedalmond;
+            margin: 32px auto;
+        }
+        .item{
+            border: 2px solid darkblue;
+            margin: 22px 4px;
+            padding: 4px 3px 5px 3px;
+            background-color: rgb(240, 243, 244);
+        }
+        #Fruits{
+            float: left;
+            width: 48%;
+        }
+        #Computer{
+            float: right;
+            width: 48%;
+        }
+        #Stationary{
+            clear: left;
+            width: 99%;
+        }
+        p h3{
+            text-align: justify;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="Fruits" class="item">
+            <h3>Fruits</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet eum libero iusto explicabo
+                voluptas itaque sit molestias magni beatae officiis, cupiditate, atque maiores debitis magnam adipisci
+                saepe tempora, ullam ex facere fugiat quasi!</p>
+        </div>
+        <div id="Computer" class="item">
+            <h3>Computer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto repellat, eum quisquam fuga maxime
+                consequatur pariatur. Quae consequuntur suscipit porro omnis rerum! Quam obcaecati laboriosam minus
+                aspernatur nobis consequatur architecto nihil explicabo autem? Modi, sit totam.</p>
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur reprehenderit ducimus nam,
+                architecto
+                at? Ad fugit soluta id voluptatibus, quaerat ipsam vero sunt praesentium vel suscipit hic corporis enim
+                odio
+                ullam dolore rerum. Doloremque!</p>
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima commodi saepe harum, sed sequi aliquam
+                placeat libero labore vitae voluptatem exercitationem quod ab quam debitis odio, sit repellat,
+                aspernatur fuga earum veniam unde asperiores accusantium?</p>
+        </div>
+    </div>
+</body>
+
+</html>

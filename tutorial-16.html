@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query and Size Units</title>
+    <style>
+        .container{
+            border: 2px solid darkolivegreen;
+            background-color: rgb(215, 201, 182);
+            height: 450px;
+            text-align: center;
+            display: block;
+        }
+        /* #first{
+            font-size: 3em;
+        }
+        #second{
+            font-size: 2rem;
+        }
+        #third{
+            font-size: 2fr;
+        } */
+
+        @media  only screen and (max-width:300px){
+            .container{
+                display: block;
+                font-size: 0.55rem;
+            }
+        }
+        @media  (min-width:300px) and (max-width:500px){
+            .container{
+                display: block;
+                background-color: blue;
+                font-size: 0.75rem;
+            }
+        }
+        @media  (max-width:800px) and (min-width:500px){
+            .container{
+                display: block;
+                background-color: aquamarine;
+                font-size: 1em;
+            }
+        }
+        @media  (min-width:800px){
+            .container{
+                display: block;
+                background-color: greenyellow;
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>

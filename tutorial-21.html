@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frames and Animation</title>
+    <style>
+        .container{
+            background-color: goldenrod;
+        }
+        .box{
+            background-color: darkgreen;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: abc;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+
+        }
+        @keyframes abc {
+            0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+                top: 250px;
+                left: 0px;
+        }
+            
+        }
+        .cbox{
+            background-color: lightskyblue;
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 80px;
+            text-align: center;
+            position: relative;
+            animation-name: abd;
+            animation-duration: 5s;
+            animation-iteration-count: 4;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay: 8s;
+        }
+        @keyframes abd {
+            0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+                top: 250px;
+                left: 0px;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is a box</div>
+        <div class="cbox">Round</div>
+    </div>
+   
+</body>
+</html>

@@ -6,3 +6,5 @@ let fasterShip={
   //Accessing properties of objects
   let objectColor = fasterShip.color;
   console.log(objectColor);
+  //using bracket notation to access properties of objects..
+  let whichFuel = fasterShip['Fuel Type'];

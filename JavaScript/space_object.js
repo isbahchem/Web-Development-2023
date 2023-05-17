@@ -8,3 +8,7 @@ let fasterShip={
   console.log(objectColor);
   //using bracket notation to access properties of objects..
   let whichFuel = fasterShip['Fuel Type'];
+  //Property assignment
+fasterShip.color = 'glorious gold';
+fasterShip.numEngines = 1;
+delete fasterShip['numEngines'];

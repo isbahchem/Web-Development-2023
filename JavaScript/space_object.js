@@ -12,3 +12,15 @@ let fasterShip={
 fasterShip.color = 'glorious gold';
 fasterShip.numEngines = 1;
 delete fasterShip['numEngines'];
+// Methods 
+let alienShip = {
+  retreat(){
+    console.log(retreatMessage);
+  },
+  takeOff(){
+    console.log('Spim... Borp... Glix... Blastoff!');
+  }
+}
+
+alienShip.retreat();
+alienShip.takeOff();

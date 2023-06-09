@@ -4,16 +4,48 @@ header img{
     display: flex;
 }
 nav{
+    /* border: 2px solid black; */
+    border-radius: 22px;
     
-    font-size: 22px;
+    background-color: darkkhaki;
+    margin: 12px;
+    
+    
 }
 nav ul{
     display: flex;
-    font-size: 20px;
+    
+    /* margin: 22px; */
+    overflow: auto;
+    
 }
 nav ul li{
-    padding: 20px 20px;
+   
+    margin: 12px 20px;
+    font-size: 20px;
+    text-decoration: none;
     list-style: none;
+    /* border: 2px solid bisque; */
+    border-radius: 34px;
+}
+nav ul li a{
+    padding: 12px 75px;
+    text-decoration: none;
+    color: aliceblue;
+}
+nav ul li a:hover{
+    background-color: black;
+    border-radius: 34px;
+}
+.search{
+    float: right;
+    color: antiquewhite;
+    padding: 12px 75px;
+}
+nav input{
+    border: 2px solid balck;
+    border-radius: 4px;
+    padding: 2px;
 }
 .container{
     width: 100%;

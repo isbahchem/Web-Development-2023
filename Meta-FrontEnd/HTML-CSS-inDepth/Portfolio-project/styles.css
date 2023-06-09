@@ -1,7 +1,14 @@
+header{
+    display: flex;
+    align-items: center;
+}
 header img{
+    
     width: 60px;
     height: 65px;
-    display: flex;
+    
+    
+
 }
 nav{
     /* border: 2px solid black; */
@@ -21,7 +28,7 @@ nav ul{
 }
 nav ul li{
    
-    margin: 12px 20px;
+    margin: 12px 12px;
     font-size: 20px;
     text-decoration: none;
     list-style: none;
@@ -29,7 +36,7 @@ nav ul li{
     border-radius: 34px;
 }
 nav ul li a{
-    padding: 12px 75px;
+    padding: 10px 75px;
     text-decoration: none;
     
     color: aliceblue;
@@ -51,57 +58,95 @@ nav input{
     padding: 2px;
 }
 .container{
+
     margin-bottom: 12px;
     width: 100%;
-    height: 300px;
+    height: 400px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 15px;
+    color: darkgray;
     align-items: center;
     justify-content: center;
 
 }
-.container img{
+.container::before{
+    background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center/cover;
+    background-color: lightsteelblue;
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    opacity: 0.5;
+    width: 100%;
+    height: 300px;
+}
+/* .container img{
     width: 200px;
     height: 200px;
+} */
+.container-2{
+    display: flex;
+    flex-direction: row;
 }
-
 .column{
-    display: inline-flex;
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    width: 27%;
     height: 400px;
-   
+    margin: 20px;
     align-content: center;
     padding: 15px;
+    background: #f2f2f2;
+    text-align: center;
+    border-radius: 22px;
     
 }
+.column h2{
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 5px;
+
+}
 .column img{
-    width: 280px;
-    height: 180px;
+   
+    width: 150px;
+    height: 150px;
     padding-left: 100px;
     
-    flex-direction: row;
+    
    
 }
 .column p{
     /* padding-top: 200px; */
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 200px;
+    
+    text-align: left;
 }
 footer{
-    margin: 20px;
-    border: 2px solid black;
+    margin-top: 20px;
+    
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 40px;
 }
 .col-1{
-    width: 40%;
+    width: 20%;
 }
 .col-1 img{
     width: 20%;
     height: 40px;
+    padding-left: 12px;
 }
 .col-2{
-    width: 60%;
+    width: 80%;
     height: 40px;
+    background-color: lavender;
+    padding-top: 12px;
+    font-size: 15px;
+    padding-right: 60px;
+    text-align: right;
 }

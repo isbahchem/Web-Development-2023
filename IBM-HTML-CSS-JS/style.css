@@ -1,5 +1,5 @@
 /* sets the margin of all the element to 10px on all sides*/
-{
+*{
     margin: 10px;
 }
 

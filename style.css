@@ -1,5 +1,14 @@
 .navbar{
     border-radius: 22px;
-    background-color: darkolivegreen;
-    color: azure;
+    background-color: rgb(56, 71, 30);
+    color: rgb(235, 247, 247);
+    margin: 12px;
+    padding: 16px;
+}
+.navbar a{
+    border-radius: 18px;
+    background-color: rgb(9, 9, 34);
+    color: rgb(245, 245, 237);
+    padding: 12px;
+    
 }

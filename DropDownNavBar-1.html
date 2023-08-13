@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>
+        DropDown Navigation Bar-1
+    </title>
+<style>
+    body{
+        margin: 0px;
+        background-color: #f2f2f2;
+    }
+    .nav{
+        width: 100%;
+        background-color: #000033;
+        height: 80px;
+    }
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+    }
+    ul li{
+        float: left;
+        margin-top: 20px;
+    }
+    ul li a{
+        width: 150px;
+        color: white;
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        font-family: Century Gothic;
+        font-weight: bold;
+    }
+    a:hover{
+        background-color: #669900;
+    }
+    ul li ul{
+        background-color: #000033;
+        display: none;
+    }
+    ul li ul li{
+        float: none;
+    }
+    ul li:hover ul{
+        display: block;
+    }
+
+</style>
+</head>
+    <body>
+        <nav>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Chemistry</a><ul>
+                        <li><a href="#">Basic Chemistry</a></li>
+                        <li><a href="#">Organic Chemistry</a></li>
+                        <li><a href="#">Inorganic Chemistry</a></li>
+                        <li><a href="#">Physical Chemistry</a></li>
+                        <li><a href="#">Analytical Chemistry</a></li>
+                    </ul></li>
+                    <li><a href="#">Computer Science</a><ul>
+                        <li><a href="#">Introduction to Programming</a></li>
+                        <li><a href="#">Object Oriented Programming</a></li>
+                        <li><a href="#">Data Sturcture and Algorithms</a></li>
+                        <li><a href="#">Database</a></li>
+                        <li><a href="#">Networking</a></li>
+                    </ul></li>
+                    <li><a href="#">TopFive</a><ul>
+                        <li><a href="#">TopFive Programming Languages</a></li>
+                        <li><a href="#">TopFive Books on Chemistry/a></li>
+                        <li><a href="#">TopFive Books on Computer Science</a></li>
+                        <li><a href="#">TopFive Online Resources to Learn Chemistry</a></li>
+                        <li><a href="#">TopFive Online Resources to Learn OOPs</a></li>
+                    </ul></li>
+                </ul>
+            </div>
+        </nav>
+    </body>
+</html>
